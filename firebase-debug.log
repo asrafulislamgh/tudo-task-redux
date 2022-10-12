@@ -1,0 +1,25 @@
+[debug] [2022-10-12T16:37:13.939Z] ----------------------------------------------------------------------
+[debug] [2022-10-12T16:37:13.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gdmam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-12T16:37:13.943Z] CLI Version:   11.14.2
+[debug] [2022-10-12T16:37:13.943Z] Platform:      win32
+[debug] [2022-10-12T16:37:13.943Z] Node Version:  v18.9.0
+[debug] [2022-10-12T16:37:13.944Z] Time:          Wed Oct 12 2022 22:37:13 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-12T16:37:13.945Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-12T16:37:14.046Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-12T16:37:14.048Z] > authorizing via signed-in user (dev.asrafulislam@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\WebDevelopment\Practice\tudo task\tudo-task
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
