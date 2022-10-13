@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap';
 import React from 'react';
 import './App.css';
 import Login from "./components/Login"
-import initializatingAuthentication from './firebase/firebase.initialization';
 import {
   BrowserRouter,
   Routes,
@@ -13,7 +12,7 @@ import {
 import Dashboard from './components/Dashboard';
 import EmailCards from './components/EmailCards';
 
-initializatingAuthentication();
+
 function App() {
   return (
     <Container>
@@ -21,6 +20,7 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Login />}></Route>
+          <Route path='/login' element={<Login />}></Route>
 
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/emailcards' element={<EmailCards />}></Route>

@@ -7,19 +7,13 @@ import {
   Button,
   Form,
 } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
-
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { useDispatch } from "react-redux";
-import { addEmailandPass } from "../features/listSlider/emailSliderSlice";
+import UseFirebase from "../hooks/useFirebase";
 
 
 
 const Login = () => {
   const [loginInfo, setLoginInfo] = useState({});
-  const navigate = useNavigate();
-  const auth = getAuth();
-  const dispatch = useDispatch()
+  const { handleLogin } = UseFirebase();
 
   const handleOnBlur = (e) => {
     const field = e.target.name;
@@ -32,16 +26,18 @@ const Login = () => {
     e.preventDefault();
     console.log(loginInfo)
 
-    signInWithEmailAndPassword(auth, loginInfo.email, loginInfo.password)
-      .then((userInfo) => {
-        // const user = userInfo.user;
-        e.target.reset()
-        navigate("/dashboard");
-        dispatch(addEmailandPass(loginInfo))
-        console.log(loginInfo)
-      }).catch(error => {
-        console.log(error)
-      })
+    // signInWithEmailAndPassword(loginInfo.email, loginInfo.password)
+    //   .then((userInfo) => {
+    //     // const user = userInfo.user;
+    //     e.target.reset()
+    //     navigate("/dashboard");
+    //     dispatch(addEmailandPass(loginInfo))
+    //     console.log(loginInfo)
+    //   }).catch(error => {
+    //     console.log(error)
+    //   })
+    handleLogin(loginInfo.email, loginInfo.password)
+
   };
 
   return (
